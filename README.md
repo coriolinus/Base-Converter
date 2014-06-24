@@ -9,7 +9,7 @@ Probably the most common use cases are the static methods:
     
 and
 
-    ArbitraryBaseInteger.interpret(numBaseN, base)
+    ArbitraryBaseInteger.interpret(num, base)
     
 For the instantiated version, numbers are stored internally as longs, to keep things efficient.
 
