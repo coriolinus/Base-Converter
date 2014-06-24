@@ -51,6 +51,19 @@ public class BaseConv {
 			}
 			System.out.println();
 		}
+		
+		boolean interpretSuccess = true;
+		for (int num : nums) {
+			for (int base : bases) {
+				if (num != ArbitraryBaseInteger.interpret(ArbitraryBaseInteger.formatAs(num, base), base)) {
+					String numBaseN = ArbitraryBaseInteger.formatAs(num, base);
+					long result = ArbitraryBaseInteger.interpret(numBaseN, base);
+					System.out.println(String.format("Failure to interpret %s base $d; expected %d, got %d", numBaseN, base, num, result));
+					interpretSuccess = false;
+				}
+			}
+		}
+		if (interpretSuccess) System.out.println("Successfully reversed all test cases");
 	}
 
 }
