@@ -15,7 +15,7 @@ For the instantiated version, numbers are stored internally as longs, to keep th
 
 The most important restriction is that bases must be integers in the range 2..36, inclusive. This ensures that we don't run out of alphabet.
 
-Execerpt from output:
+Excerpt from output:
 
     64 base 2: 1000000
     64 base 3: 2101
